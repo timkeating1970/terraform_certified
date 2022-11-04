@@ -6,7 +6,7 @@
 # Made by Denis Astahov
 #-------------------------------------------------------------------------------
 provider "aws" {
-  region = "eu-north-1"
+  region = "us-east-1"
 }
 
 module "vpc_prod" {
@@ -17,9 +17,9 @@ module "vpc_prod" {
   public_subnet_cidrs  = ["10.200.1.0/24", "10.200.2.0/24", "10.200.3.0/24"]
   private_subnet_cidrs = ["10.200.11.0/24", "10.200.22.0/24", "10.200.33.0/24"]
   tags = {
-    Owner   = "ASTAHOV.NET"
+    Owner   = "KEATING.NET"
     Code    = "777766"
-    Project = "SuperPreject"
+    Project = "SuperProject"
   }
 }
 

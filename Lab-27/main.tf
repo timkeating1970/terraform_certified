@@ -10,33 +10,33 @@
 #-------------------------------------------------------------------------------
 
 provider "aws" {
-  region = "us-west-1"
+  region = "us-east-1"
 }
 
 resource "aws_instance" "node1" {
-  ami           = "ami-05655c267c89566dd"
+  ami           = "ami-0cff7528ff583bf9a"
   instance_type = "t3.micro"
   tags = {
     Name  = "Node-1"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }
 
 resource "aws_instance" "node2" {
-  ami           = "ami-05655c267c89566dd"
+  ami           = "ami-0cff7528ff583bf9a"
   instance_type = "t3.micro"
   tags = {
     Name  = "Node-2"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }
 
 resource "aws_instance" "node3" {
-  ami           = "ami-05655c267c89566dd"
+  ami           = "ami-0cff7528ff583bf9a"
   instance_type = "t3.micro"
   tags = {
     Name  = "Node-3"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
   depends_on = [aws_instance.node2]
 }

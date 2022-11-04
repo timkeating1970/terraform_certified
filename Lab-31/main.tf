@@ -32,7 +32,7 @@ resource "aws_instance" "web" {
   user_data = templatefile("user_data.sh.tpl", { // Template File
     f_name = "Denis"
     l_name = "Astahov"
-    names  = ["John", "Angel", "David", "Victor", "Frank", "Melissa", "Sonya"]
+    names  = ["John", "Angel", "David", "Victor", "Frank", "Melissa", "Sonya", "Pedro"]
   })
 
   tags = {

@@ -16,13 +16,13 @@ variable "servers_settings" {
   type = map(any)
   default = {
     web = {
-      ami           = "ami-0e472933a1395e172"
+      ami           = "ami-098e42ae54c764c35"
       instance_size = "t3.small"
       root_disksize = 20
       encrypted     = true
     }
     app = {
-      ami           = "ami-07dd19a7900a1f049"
+      ami           = "ami-0d70546e43a941d70"
       instance_size = "t3.micro"
       root_disksize = 10
       encrypted     = false
@@ -33,5 +33,5 @@ variable "servers_settings" {
 
 variable "create_bastion" {
   description = "Provision Bastion Server YES/NO"
-  default     = "NO"
+  default     = "YES"
 }

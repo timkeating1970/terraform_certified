@@ -5,7 +5,7 @@ key_pair      = "tfkey"
 
 tags = {
   Owner       = "Tim Keating"
-  Environment = "Prod"
+  Environment = "adkfasdfsd"
   Project     = "Phoenix"
   Code        = "334455"
 }

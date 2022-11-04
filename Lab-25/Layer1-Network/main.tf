@@ -7,16 +7,16 @@
 # Made by Denis Astahov
 #----------------------------------------------------------
 provider "aws" {
-  region = "eu-north-1"
+  region = "us-east-1"
 }
 
 data "aws_availability_zones" "available" {}
 
 terraform {
   backend "s3" {
-    bucket = "adv-it-terraform-remote-state" // Bucket where to SAVE Terraform State
+    bucket = "adv-terraform-remote-state-756028263501" // Bucket where to SAVE Terraform State
     key    = "dev/network/terraform.tfstate" // Object name in the bucket to SAVE Terraform State
-    region = "us-west-2"                     // Region where bucket created
+    region = "us-east-1"                     // Region where bucket created
   }
 }
 
@@ -25,7 +25,7 @@ resource "aws_vpc" "main" {
   cidr_block = var.vpc_cidr
   tags = {
     Name  = "${var.env}-vpc"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }
 
@@ -33,7 +33,7 @@ resource "aws_internet_gateway" "main" {
   vpc_id = aws_vpc.main.id
   tags = {
     Name  = "${var.env}-igw"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }
 
@@ -46,7 +46,7 @@ resource "aws_subnet" "public_subnets" {
   map_public_ip_on_launch = true
   tags = {
     Name  = "${var.env}-public-${count.index + 1}"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }
 
@@ -58,7 +58,7 @@ resource "aws_route_table" "public_subnets" {
   }
   tags = {
     Name  = "${var.env}-route-public-subnets"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }
 

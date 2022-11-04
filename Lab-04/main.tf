@@ -7,22 +7,22 @@
 #----------------------------------------------------------
 
 provider "aws" {
-  region = "ca-central-1"
+  region = "us-east-1"
 }
 
 resource "aws_instance" "web" {
-  ami                    = "ami-0c9bfc21ac5bf10eb" // Amazon Linux2
+  ami                    = "ami-0cff7528ff583bf9a" // Amazon Linux2
   instance_type          = "t3.micro"
   vpc_security_group_ids = [aws_security_group.web.id]
   user_data = templatefile("user_data.sh.tpl", { // Template File
-    f_name = "Denis"
-    l_name = "Astahov"
+    f_name = "Tim"
+    l_name = "Keating"
     names  = ["John", "Angel", "David", "Victor", "Frank", "Melissa", "Kitana"]
   })
 
   tags = {
     Name  = "WebServer Built by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }
 
@@ -56,6 +56,6 @@ resource "aws_security_group" "web" {
 
   tags = {
     Name  = "WebServer SG by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }

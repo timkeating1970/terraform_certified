@@ -42,7 +42,7 @@ chkconfig httpd on
 EOF
   tags = {
     Name  = "${var.name}-WebServer-${var.subnet_id}"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }
 
@@ -66,6 +66,6 @@ resource "aws_security_group" "webserver" {
 
   tags = {
     Name  = "${var.name}-web-server-sg"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }

@@ -7,27 +7,29 @@
 #----------------------------------------------------------
 
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-1"
 }
 
 resource "aws_instance" "my_ubuntu" {
-  ami           = "ami-06e54d05255faf8f6" # This is Comments
+  ami           = "ami-052efd3df9dad4825" # This is Comments
   instance_type = "t3.micro"              // This is also Comments
-  key_name      = "denis-key-oregon"
+  key_name      = "tfkey"
 
   tags = {
     Name    = "My-UbuntuLinux-Server"
-    Owner   = "Denis Astahov"
+    Owner   = "Tim Keating"
     project = "Phoenix"
   }
 }
 
 resource "aws_instance" "my_amazon" {
-  ami           = "ami-0528a5175983e7f28" // This is Comments
-  instance_type = "t3.small"              # This is also Comments
+  ami           = "ami-05fa00d4c63e32376" // This is Comments
+  instance_type = "t3.micro"              # This is also Comments
+  key_name      = "tfkey"
 
   tags = {
-    Name  = "My-AmazonLinux-Server"
-    Owner = "Denis Astahov"
+    Name    = "My-AmazonLinux2-Server"
+    Owner   = "Tim Keating"
+    project = "Phoenix"
   }
 }

@@ -7,11 +7,11 @@
 #----------------------------------------------------------
 
 provider "aws" {
-  region = "ca-central-1"
+  region = "us-east-1"
 }
 
 resource "aws_instance" "web" {
-  ami                    = "ami-0c9bfc21ac5bf10eb" // Amazon Linux2
+  ami                    = "ami-05fa00d4c63e32376" // Amazon Linux2
   instance_type          = "t3.micro"
   vpc_security_group_ids = [aws_security_group.web.id]
   user_data              = file("user_data.sh") // Static File

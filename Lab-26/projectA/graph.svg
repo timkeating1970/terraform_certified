@@ -1,0 +1,207 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] module.my_vpc_default.aws_eip.nat (expand)" [label = "module.my_vpc_default.aws_eip.nat", shape = "box"]
+		"[root] module.my_vpc_default.aws_internet_gateway.main (expand)" [label = "module.my_vpc_default.aws_internet_gateway.main", shape = "box"]
+		"[root] module.my_vpc_default.aws_nat_gateway.nat (expand)" [label = "module.my_vpc_default.aws_nat_gateway.nat", shape = "box"]
+		"[root] module.my_vpc_default.aws_route_table.private_subnets (expand)" [label = "module.my_vpc_default.aws_route_table.private_subnets", shape = "box"]
+		"[root] module.my_vpc_default.aws_route_table.public_subnets (expand)" [label = "module.my_vpc_default.aws_route_table.public_subnets", shape = "box"]
+		"[root] module.my_vpc_default.aws_route_table_association.private_routes (expand)" [label = "module.my_vpc_default.aws_route_table_association.private_routes", shape = "box"]
+		"[root] module.my_vpc_default.aws_route_table_association.public_routes (expand)" [label = "module.my_vpc_default.aws_route_table_association.public_routes", shape = "box"]
+		"[root] module.my_vpc_default.aws_subnet.private_subnets (expand)" [label = "module.my_vpc_default.aws_subnet.private_subnets", shape = "box"]
+		"[root] module.my_vpc_default.aws_subnet.public_subnets (expand)" [label = "module.my_vpc_default.aws_subnet.public_subnets", shape = "box"]
+		"[root] module.my_vpc_default.aws_vpc.main (expand)" [label = "module.my_vpc_default.aws_vpc.main", shape = "box"]
+		"[root] module.my_vpc_default.data.aws_availability_zones.available (expand)" [label = "module.my_vpc_default.data.aws_availability_zones.available", shape = "box"]
+		"[root] module.my_vpc_prod.aws_eip.nat (expand)" [label = "module.my_vpc_prod.aws_eip.nat", shape = "box"]
+		"[root] module.my_vpc_prod.aws_internet_gateway.main (expand)" [label = "module.my_vpc_prod.aws_internet_gateway.main", shape = "box"]
+		"[root] module.my_vpc_prod.aws_nat_gateway.nat (expand)" [label = "module.my_vpc_prod.aws_nat_gateway.nat", shape = "box"]
+		"[root] module.my_vpc_prod.aws_route_table.private_subnets (expand)" [label = "module.my_vpc_prod.aws_route_table.private_subnets", shape = "box"]
+		"[root] module.my_vpc_prod.aws_route_table.public_subnets (expand)" [label = "module.my_vpc_prod.aws_route_table.public_subnets", shape = "box"]
+		"[root] module.my_vpc_prod.aws_route_table_association.private_routes (expand)" [label = "module.my_vpc_prod.aws_route_table_association.private_routes", shape = "box"]
+		"[root] module.my_vpc_prod.aws_route_table_association.public_routes (expand)" [label = "module.my_vpc_prod.aws_route_table_association.public_routes", shape = "box"]
+		"[root] module.my_vpc_prod.aws_subnet.private_subnets (expand)" [label = "module.my_vpc_prod.aws_subnet.private_subnets", shape = "box"]
+		"[root] module.my_vpc_prod.aws_subnet.public_subnets (expand)" [label = "module.my_vpc_prod.aws_subnet.public_subnets", shape = "box"]
+		"[root] module.my_vpc_prod.aws_vpc.main (expand)" [label = "module.my_vpc_prod.aws_vpc.main", shape = "box"]
+		"[root] module.my_vpc_prod.data.aws_availability_zones.available (expand)" [label = "module.my_vpc_prod.data.aws_availability_zones.available", shape = "box"]
+		"[root] module.my_vpc_staging.aws_eip.nat (expand)" [label = "module.my_vpc_staging.aws_eip.nat", shape = "box"]
+		"[root] module.my_vpc_staging.aws_internet_gateway.main (expand)" [label = "module.my_vpc_staging.aws_internet_gateway.main", shape = "box"]
+		"[root] module.my_vpc_staging.aws_nat_gateway.nat (expand)" [label = "module.my_vpc_staging.aws_nat_gateway.nat", shape = "box"]
+		"[root] module.my_vpc_staging.aws_route_table.private_subnets (expand)" [label = "module.my_vpc_staging.aws_route_table.private_subnets", shape = "box"]
+		"[root] module.my_vpc_staging.aws_route_table.public_subnets (expand)" [label = "module.my_vpc_staging.aws_route_table.public_subnets", shape = "box"]
+		"[root] module.my_vpc_staging.aws_route_table_association.private_routes (expand)" [label = "module.my_vpc_staging.aws_route_table_association.private_routes", shape = "box"]
+		"[root] module.my_vpc_staging.aws_route_table_association.public_routes (expand)" [label = "module.my_vpc_staging.aws_route_table_association.public_routes", shape = "box"]
+		"[root] module.my_vpc_staging.aws_subnet.private_subnets (expand)" [label = "module.my_vpc_staging.aws_subnet.private_subnets", shape = "box"]
+		"[root] module.my_vpc_staging.aws_subnet.public_subnets (expand)" [label = "module.my_vpc_staging.aws_subnet.public_subnets", shape = "box"]
+		"[root] module.my_vpc_staging.aws_vpc.main (expand)" [label = "module.my_vpc_staging.aws_vpc.main", shape = "box"]
+		"[root] module.my_vpc_staging.data.aws_availability_zones.available (expand)" [label = "module.my_vpc_staging.data.aws_availability_zones.available", shape = "box"]
+		"[root] output.my_private_subnet_ids" [label = "output.my_private_subnet_ids", shape = "note"]
+		"[root] output.my_private_subnet_ids_prod" [label = "output.my_private_subnet_ids_prod", shape = "note"]
+		"[root] output.my_private_subnet_ids_staging" [label = "output.my_private_subnet_ids_staging", shape = "note"]
+		"[root] output.my_public_subnet_ids" [label = "output.my_public_subnet_ids", shape = "note"]
+		"[root] output.my_public_subnet_ids_prod" [label = "output.my_public_subnet_ids_prod", shape = "note"]
+		"[root] output.my_public_subnet_ids_staging" [label = "output.my_public_subnet_ids_staging", shape = "note"]
+		"[root] output.my_vpc_cidr" [label = "output.my_vpc_cidr", shape = "note"]
+		"[root] output.my_vpc_cidr_prod" [label = "output.my_vpc_cidr_prod", shape = "note"]
+		"[root] output.my_vpc_cidr_staging" [label = "output.my_vpc_cidr_staging", shape = "note"]
+		"[root] output.my_vpc_id" [label = "output.my_vpc_id", shape = "note"]
+		"[root] output.my_vpc_id_prod" [label = "output.my_vpc_id_prod", shape = "note"]
+		"[root] output.my_vpc_id_staging" [label = "output.my_vpc_id_staging", shape = "note"]
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" [label = "provider[\"registry.terraform.io/hashicorp/aws\"]", shape = "diamond"]
+		"[root] module.my_vpc_default (close)" -> "[root] module.my_vpc_default.aws_route_table_association.private_routes (expand)"
+		"[root] module.my_vpc_default (close)" -> "[root] module.my_vpc_default.aws_route_table_association.public_routes (expand)"
+		"[root] module.my_vpc_default (close)" -> "[root] module.my_vpc_default.output.private_subnet_ids (expand)"
+		"[root] module.my_vpc_default (close)" -> "[root] module.my_vpc_default.output.public_subnet_ids (expand)"
+		"[root] module.my_vpc_default (close)" -> "[root] module.my_vpc_default.output.vpc_cidr (expand)"
+		"[root] module.my_vpc_default (close)" -> "[root] module.my_vpc_default.output.vpc_id (expand)"
+		"[root] module.my_vpc_default.aws_eip.nat (expand)" -> "[root] module.my_vpc_default.var.env (expand)"
+		"[root] module.my_vpc_default.aws_eip.nat (expand)" -> "[root] module.my_vpc_default.var.private_subnet_cidrs (expand)"
+		"[root] module.my_vpc_default.aws_eip.nat (expand)" -> "[root] module.my_vpc_default.var.tags (expand)"
+		"[root] module.my_vpc_default.aws_eip.nat (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.my_vpc_default.aws_internet_gateway.main (expand)" -> "[root] module.my_vpc_default.aws_vpc.main (expand)"
+		"[root] module.my_vpc_default.aws_nat_gateway.nat (expand)" -> "[root] module.my_vpc_default.aws_eip.nat (expand)"
+		"[root] module.my_vpc_default.aws_nat_gateway.nat (expand)" -> "[root] module.my_vpc_default.aws_subnet.public_subnets (expand)"
+		"[root] module.my_vpc_default.aws_route_table.private_subnets (expand)" -> "[root] module.my_vpc_default.aws_nat_gateway.nat (expand)"
+		"[root] module.my_vpc_default.aws_route_table.public_subnets (expand)" -> "[root] module.my_vpc_default.aws_internet_gateway.main (expand)"
+		"[root] module.my_vpc_default.aws_route_table_association.private_routes (expand)" -> "[root] module.my_vpc_default.aws_route_table.private_subnets (expand)"
+		"[root] module.my_vpc_default.aws_route_table_association.private_routes (expand)" -> "[root] module.my_vpc_default.aws_subnet.private_subnets (expand)"
+		"[root] module.my_vpc_default.aws_route_table_association.public_routes (expand)" -> "[root] module.my_vpc_default.aws_route_table.public_subnets (expand)"
+		"[root] module.my_vpc_default.aws_route_table_association.public_routes (expand)" -> "[root] module.my_vpc_default.aws_subnet.public_subnets (expand)"
+		"[root] module.my_vpc_default.aws_subnet.private_subnets (expand)" -> "[root] module.my_vpc_default.aws_vpc.main (expand)"
+		"[root] module.my_vpc_default.aws_subnet.private_subnets (expand)" -> "[root] module.my_vpc_default.data.aws_availability_zones.available (expand)"
+		"[root] module.my_vpc_default.aws_subnet.private_subnets (expand)" -> "[root] module.my_vpc_default.var.private_subnet_cidrs (expand)"
+		"[root] module.my_vpc_default.aws_subnet.public_subnets (expand)" -> "[root] module.my_vpc_default.aws_vpc.main (expand)"
+		"[root] module.my_vpc_default.aws_subnet.public_subnets (expand)" -> "[root] module.my_vpc_default.data.aws_availability_zones.available (expand)"
+		"[root] module.my_vpc_default.aws_subnet.public_subnets (expand)" -> "[root] module.my_vpc_default.var.public_subnet_cidrs (expand)"
+		"[root] module.my_vpc_default.aws_vpc.main (expand)" -> "[root] module.my_vpc_default.var.env (expand)"
+		"[root] module.my_vpc_default.aws_vpc.main (expand)" -> "[root] module.my_vpc_default.var.tags (expand)"
+		"[root] module.my_vpc_default.aws_vpc.main (expand)" -> "[root] module.my_vpc_default.var.vpc_cidr (expand)"
+		"[root] module.my_vpc_default.aws_vpc.main (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.my_vpc_default.data.aws_availability_zones.available (expand)" -> "[root] module.my_vpc_default (expand)"
+		"[root] module.my_vpc_default.data.aws_availability_zones.available (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.my_vpc_default.output.private_subnet_ids (expand)" -> "[root] module.my_vpc_default.aws_subnet.private_subnets (expand)"
+		"[root] module.my_vpc_default.output.public_subnet_ids (expand)" -> "[root] module.my_vpc_default.aws_subnet.public_subnets (expand)"
+		"[root] module.my_vpc_default.output.vpc_cidr (expand)" -> "[root] module.my_vpc_default.aws_vpc.main (expand)"
+		"[root] module.my_vpc_default.output.vpc_id (expand)" -> "[root] module.my_vpc_default.aws_vpc.main (expand)"
+		"[root] module.my_vpc_default.var.env (expand)" -> "[root] module.my_vpc_default (expand)"
+		"[root] module.my_vpc_default.var.private_subnet_cidrs (expand)" -> "[root] module.my_vpc_default (expand)"
+		"[root] module.my_vpc_default.var.public_subnet_cidrs (expand)" -> "[root] module.my_vpc_default (expand)"
+		"[root] module.my_vpc_default.var.tags (expand)" -> "[root] module.my_vpc_default (expand)"
+		"[root] module.my_vpc_default.var.vpc_cidr (expand)" -> "[root] module.my_vpc_default (expand)"
+		"[root] module.my_vpc_prod (close)" -> "[root] module.my_vpc_prod.aws_route_table_association.private_routes (expand)"
+		"[root] module.my_vpc_prod (close)" -> "[root] module.my_vpc_prod.aws_route_table_association.public_routes (expand)"
+		"[root] module.my_vpc_prod (close)" -> "[root] module.my_vpc_prod.output.private_subnet_ids (expand)"
+		"[root] module.my_vpc_prod (close)" -> "[root] module.my_vpc_prod.output.public_subnet_ids (expand)"
+		"[root] module.my_vpc_prod (close)" -> "[root] module.my_vpc_prod.output.vpc_cidr (expand)"
+		"[root] module.my_vpc_prod (close)" -> "[root] module.my_vpc_prod.output.vpc_id (expand)"
+		"[root] module.my_vpc_prod.aws_eip.nat (expand)" -> "[root] module.my_vpc_prod.var.env (expand)"
+		"[root] module.my_vpc_prod.aws_eip.nat (expand)" -> "[root] module.my_vpc_prod.var.private_subnet_cidrs (expand)"
+		"[root] module.my_vpc_prod.aws_eip.nat (expand)" -> "[root] module.my_vpc_prod.var.tags (expand)"
+		"[root] module.my_vpc_prod.aws_eip.nat (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.my_vpc_prod.aws_internet_gateway.main (expand)" -> "[root] module.my_vpc_prod.aws_vpc.main (expand)"
+		"[root] module.my_vpc_prod.aws_nat_gateway.nat (expand)" -> "[root] module.my_vpc_prod.aws_eip.nat (expand)"
+		"[root] module.my_vpc_prod.aws_nat_gateway.nat (expand)" -> "[root] module.my_vpc_prod.aws_subnet.public_subnets (expand)"
+		"[root] module.my_vpc_prod.aws_route_table.private_subnets (expand)" -> "[root] module.my_vpc_prod.aws_nat_gateway.nat (expand)"
+		"[root] module.my_vpc_prod.aws_route_table.public_subnets (expand)" -> "[root] module.my_vpc_prod.aws_internet_gateway.main (expand)"
+		"[root] module.my_vpc_prod.aws_route_table_association.private_routes (expand)" -> "[root] module.my_vpc_prod.aws_route_table.private_subnets (expand)"
+		"[root] module.my_vpc_prod.aws_route_table_association.private_routes (expand)" -> "[root] module.my_vpc_prod.aws_subnet.private_subnets (expand)"
+		"[root] module.my_vpc_prod.aws_route_table_association.public_routes (expand)" -> "[root] module.my_vpc_prod.aws_route_table.public_subnets (expand)"
+		"[root] module.my_vpc_prod.aws_route_table_association.public_routes (expand)" -> "[root] module.my_vpc_prod.aws_subnet.public_subnets (expand)"
+		"[root] module.my_vpc_prod.aws_subnet.private_subnets (expand)" -> "[root] module.my_vpc_prod.aws_vpc.main (expand)"
+		"[root] module.my_vpc_prod.aws_subnet.private_subnets (expand)" -> "[root] module.my_vpc_prod.data.aws_availability_zones.available (expand)"
+		"[root] module.my_vpc_prod.aws_subnet.private_subnets (expand)" -> "[root] module.my_vpc_prod.var.private_subnet_cidrs (expand)"
+		"[root] module.my_vpc_prod.aws_subnet.public_subnets (expand)" -> "[root] module.my_vpc_prod.aws_vpc.main (expand)"
+		"[root] module.my_vpc_prod.aws_subnet.public_subnets (expand)" -> "[root] module.my_vpc_prod.data.aws_availability_zones.available (expand)"
+		"[root] module.my_vpc_prod.aws_subnet.public_subnets (expand)" -> "[root] module.my_vpc_prod.var.public_subnet_cidrs (expand)"
+		"[root] module.my_vpc_prod.aws_vpc.main (expand)" -> "[root] module.my_vpc_prod.var.env (expand)"
+		"[root] module.my_vpc_prod.aws_vpc.main (expand)" -> "[root] module.my_vpc_prod.var.tags (expand)"
+		"[root] module.my_vpc_prod.aws_vpc.main (expand)" -> "[root] module.my_vpc_prod.var.vpc_cidr (expand)"
+		"[root] module.my_vpc_prod.aws_vpc.main (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.my_vpc_prod.data.aws_availability_zones.available (expand)" -> "[root] module.my_vpc_prod (expand)"
+		"[root] module.my_vpc_prod.data.aws_availability_zones.available (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.my_vpc_prod.output.private_subnet_ids (expand)" -> "[root] module.my_vpc_prod.aws_subnet.private_subnets (expand)"
+		"[root] module.my_vpc_prod.output.public_subnet_ids (expand)" -> "[root] module.my_vpc_prod.aws_subnet.public_subnets (expand)"
+		"[root] module.my_vpc_prod.output.vpc_cidr (expand)" -> "[root] module.my_vpc_prod.aws_vpc.main (expand)"
+		"[root] module.my_vpc_prod.output.vpc_id (expand)" -> "[root] module.my_vpc_prod.aws_vpc.main (expand)"
+		"[root] module.my_vpc_prod.var.env (expand)" -> "[root] module.my_vpc_prod (expand)"
+		"[root] module.my_vpc_prod.var.private_subnet_cidrs (expand)" -> "[root] module.my_vpc_prod (expand)"
+		"[root] module.my_vpc_prod.var.public_subnet_cidrs (expand)" -> "[root] module.my_vpc_prod (expand)"
+		"[root] module.my_vpc_prod.var.tags (expand)" -> "[root] module.my_vpc_prod (expand)"
+		"[root] module.my_vpc_prod.var.vpc_cidr (expand)" -> "[root] module.my_vpc_prod (expand)"
+		"[root] module.my_vpc_staging (close)" -> "[root] module.my_vpc_staging.aws_route_table_association.private_routes (expand)"
+		"[root] module.my_vpc_staging (close)" -> "[root] module.my_vpc_staging.aws_route_table_association.public_routes (expand)"
+		"[root] module.my_vpc_staging (close)" -> "[root] module.my_vpc_staging.output.private_subnet_ids (expand)"
+		"[root] module.my_vpc_staging (close)" -> "[root] module.my_vpc_staging.output.public_subnet_ids (expand)"
+		"[root] module.my_vpc_staging (close)" -> "[root] module.my_vpc_staging.output.vpc_cidr (expand)"
+		"[root] module.my_vpc_staging (close)" -> "[root] module.my_vpc_staging.output.vpc_id (expand)"
+		"[root] module.my_vpc_staging.aws_eip.nat (expand)" -> "[root] module.my_vpc_staging.var.env (expand)"
+		"[root] module.my_vpc_staging.aws_eip.nat (expand)" -> "[root] module.my_vpc_staging.var.private_subnet_cidrs (expand)"
+		"[root] module.my_vpc_staging.aws_eip.nat (expand)" -> "[root] module.my_vpc_staging.var.tags (expand)"
+		"[root] module.my_vpc_staging.aws_eip.nat (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.my_vpc_staging.aws_internet_gateway.main (expand)" -> "[root] module.my_vpc_staging.aws_vpc.main (expand)"
+		"[root] module.my_vpc_staging.aws_nat_gateway.nat (expand)" -> "[root] module.my_vpc_staging.aws_eip.nat (expand)"
+		"[root] module.my_vpc_staging.aws_nat_gateway.nat (expand)" -> "[root] module.my_vpc_staging.aws_subnet.public_subnets (expand)"
+		"[root] module.my_vpc_staging.aws_route_table.private_subnets (expand)" -> "[root] module.my_vpc_staging.aws_nat_gateway.nat (expand)"
+		"[root] module.my_vpc_staging.aws_route_table.public_subnets (expand)" -> "[root] module.my_vpc_staging.aws_internet_gateway.main (expand)"
+		"[root] module.my_vpc_staging.aws_route_table_association.private_routes (expand)" -> "[root] module.my_vpc_staging.aws_route_table.private_subnets (expand)"
+		"[root] module.my_vpc_staging.aws_route_table_association.private_routes (expand)" -> "[root] module.my_vpc_staging.aws_subnet.private_subnets (expand)"
+		"[root] module.my_vpc_staging.aws_route_table_association.public_routes (expand)" -> "[root] module.my_vpc_staging.aws_route_table.public_subnets (expand)"
+		"[root] module.my_vpc_staging.aws_route_table_association.public_routes (expand)" -> "[root] module.my_vpc_staging.aws_subnet.public_subnets (expand)"
+		"[root] module.my_vpc_staging.aws_subnet.private_subnets (expand)" -> "[root] module.my_vpc_staging.aws_vpc.main (expand)"
+		"[root] module.my_vpc_staging.aws_subnet.private_subnets (expand)" -> "[root] module.my_vpc_staging.data.aws_availability_zones.available (expand)"
+		"[root] module.my_vpc_staging.aws_subnet.private_subnets (expand)" -> "[root] module.my_vpc_staging.var.private_subnet_cidrs (expand)"
+		"[root] module.my_vpc_staging.aws_subnet.public_subnets (expand)" -> "[root] module.my_vpc_staging.aws_vpc.main (expand)"
+		"[root] module.my_vpc_staging.aws_subnet.public_subnets (expand)" -> "[root] module.my_vpc_staging.data.aws_availability_zones.available (expand)"
+		"[root] module.my_vpc_staging.aws_subnet.public_subnets (expand)" -> "[root] module.my_vpc_staging.var.public_subnet_cidrs (expand)"
+		"[root] module.my_vpc_staging.aws_vpc.main (expand)" -> "[root] module.my_vpc_staging.var.env (expand)"
+		"[root] module.my_vpc_staging.aws_vpc.main (expand)" -> "[root] module.my_vpc_staging.var.tags (expand)"
+		"[root] module.my_vpc_staging.aws_vpc.main (expand)" -> "[root] module.my_vpc_staging.var.vpc_cidr (expand)"
+		"[root] module.my_vpc_staging.aws_vpc.main (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.my_vpc_staging.data.aws_availability_zones.available (expand)" -> "[root] module.my_vpc_staging (expand)"
+		"[root] module.my_vpc_staging.data.aws_availability_zones.available (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.my_vpc_staging.output.private_subnet_ids (expand)" -> "[root] module.my_vpc_staging.aws_subnet.private_subnets (expand)"
+		"[root] module.my_vpc_staging.output.public_subnet_ids (expand)" -> "[root] module.my_vpc_staging.aws_subnet.public_subnets (expand)"
+		"[root] module.my_vpc_staging.output.vpc_cidr (expand)" -> "[root] module.my_vpc_staging.aws_vpc.main (expand)"
+		"[root] module.my_vpc_staging.output.vpc_id (expand)" -> "[root] module.my_vpc_staging.aws_vpc.main (expand)"
+		"[root] module.my_vpc_staging.var.env (expand)" -> "[root] module.my_vpc_staging (expand)"
+		"[root] module.my_vpc_staging.var.private_subnet_cidrs (expand)" -> "[root] module.my_vpc_staging (expand)"
+		"[root] module.my_vpc_staging.var.public_subnet_cidrs (expand)" -> "[root] module.my_vpc_staging (expand)"
+		"[root] module.my_vpc_staging.var.tags (expand)" -> "[root] module.my_vpc_staging (expand)"
+		"[root] module.my_vpc_staging.var.vpc_cidr (expand)" -> "[root] module.my_vpc_staging (expand)"
+		"[root] output.my_private_subnet_ids" -> "[root] module.my_vpc_default.output.private_subnet_ids (expand)"
+		"[root] output.my_private_subnet_ids_prod" -> "[root] module.my_vpc_prod.output.private_subnet_ids (expand)"
+		"[root] output.my_private_subnet_ids_staging" -> "[root] module.my_vpc_staging.output.private_subnet_ids (expand)"
+		"[root] output.my_public_subnet_ids" -> "[root] module.my_vpc_default.output.public_subnet_ids (expand)"
+		"[root] output.my_public_subnet_ids_prod" -> "[root] module.my_vpc_prod.output.public_subnet_ids (expand)"
+		"[root] output.my_public_subnet_ids_staging" -> "[root] module.my_vpc_staging.output.public_subnet_ids (expand)"
+		"[root] output.my_vpc_cidr" -> "[root] module.my_vpc_default.output.vpc_cidr (expand)"
+		"[root] output.my_vpc_cidr_prod" -> "[root] module.my_vpc_prod.output.vpc_cidr (expand)"
+		"[root] output.my_vpc_cidr_staging" -> "[root] module.my_vpc_staging.output.vpc_cidr (expand)"
+		"[root] output.my_vpc_id" -> "[root] module.my_vpc_default.output.vpc_id (expand)"
+		"[root] output.my_vpc_id_prod" -> "[root] module.my_vpc_prod.output.vpc_id (expand)"
+		"[root] output.my_vpc_id_staging" -> "[root] module.my_vpc_staging.output.vpc_id (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] module.my_vpc_default.aws_route_table_association.private_routes (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] module.my_vpc_default.aws_route_table_association.public_routes (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] module.my_vpc_prod.aws_route_table_association.private_routes (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] module.my_vpc_prod.aws_route_table_association.public_routes (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] module.my_vpc_staging.aws_route_table_association.private_routes (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] module.my_vpc_staging.aws_route_table_association.public_routes (expand)"
+		"[root] root" -> "[root] module.my_vpc_default (close)"
+		"[root] root" -> "[root] module.my_vpc_prod (close)"
+		"[root] root" -> "[root] module.my_vpc_staging (close)"
+		"[root] root" -> "[root] output.my_private_subnet_ids"
+		"[root] root" -> "[root] output.my_private_subnet_ids_prod"
+		"[root] root" -> "[root] output.my_private_subnet_ids_staging"
+		"[root] root" -> "[root] output.my_public_subnet_ids"
+		"[root] root" -> "[root] output.my_public_subnet_ids_prod"
+		"[root] root" -> "[root] output.my_public_subnet_ids_staging"
+		"[root] root" -> "[root] output.my_vpc_cidr"
+		"[root] root" -> "[root] output.my_vpc_cidr_prod"
+		"[root] root" -> "[root] output.my_vpc_cidr_staging"
+		"[root] root" -> "[root] output.my_vpc_id"
+		"[root] root" -> "[root] output.my_vpc_id_prod"
+		"[root] root" -> "[root] output.my_vpc_id_staging"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+	}
+}
+

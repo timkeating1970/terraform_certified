@@ -8,15 +8,15 @@
 # Made by Denis Astahov
 #----------------------------------------------------------
 provider "aws" {
-  region = "eu-north-1"
+  region = "us-east-1"
 }
 
 
 terraform { // This is to Store Remote State
   backend "s3" {
-    bucket = "adv-it-terraform-remote-state"   // Bucket where to SAVE Terraform State
+    bucket = "adv-terraform-remote-state-756028263501"   // Bucket where to SAVE Terraform State
     key    = "dev/webserver/terraform.tfstate" // Object name in the bucket to SAVE Terraform State
-    region = "us-west-2"                       // Region where bucket created
+    region = "us-east-1"                       // Region where bucket created
   }
 }
 
@@ -24,9 +24,9 @@ terraform { // This is to Store Remote State
 data "terraform_remote_state" "vpc" { // This is to use Outputs from Remote State
   backend = "s3"
   config = {
-    bucket = "adv-it-terraform-remote-state" // Bucket from where to GET Terraform State
+    bucket = "adv-terraform-remote-state-756028263501" // Bucket from where to GET Terraform State
     key    = "dev/network/terraform.tfstate" // Object name in the bucket to GET Terraform State
-    region = "us-west-2"                     // Region where bucket created
+    region = "us-east-1"                     // Region where bucket created
   }
 }
 
@@ -57,7 +57,7 @@ chkconfig httpd on
 EOF
   tags = {
     Name  = "${var.env}-WebServer"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }
 
@@ -87,6 +87,6 @@ resource "aws_security_group" "webserver" {
 
   tags = {
     Name  = "${var.env}-web-server-sg"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }

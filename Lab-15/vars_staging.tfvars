@@ -1,10 +1,10 @@
-aws_region    = "ca-central-1"
+aws_region    = "us-east-1"
 port_list     = ["80", "443", "8443"]
-instance_size = "t2.micro"
-key_pair      = "CanadaKey"
+instance_size = "t3.micro"
+key_pair      = "tfkey"
 
 tags = {
-  Owner       = "Denis Astahov"
+  Owner       = "Tim Keating"
   Environment = "Staging"
   Project     = "Phoenix"
   Code        = "445555"

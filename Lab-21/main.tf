@@ -17,11 +17,11 @@ resource "aws_iam_user" "user" {
 
 resource "aws_instance" "my_server" {
   for_each      = toset(["Dev", "Staging", "Prod"])
-  ami           = "ami-0e472933a1395e172"
+  ami           = "ami-098e42ae54c764c35"
   instance_type = "t3.micro"
-  tags = {
-    Name  = "Server-${each.value}"
-    Owner = "Denis Astahov"
+  tags          = {
+    Name        = "Server-${each.value}"
+    Owner       = "Tim Keating"
   }
 }
 
@@ -40,16 +40,16 @@ resource "aws_instance" "server" {
   }
   tags = {
     Name  = "Server-${each.key}"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }
 
 resource "aws_instance" "bastion_server" {
   for_each      = var.create_bastion == "YES" ? toset(["bastion"]) : []
-  ami           = "ami-0e472933a1395e172"
+  ami           = "ami-098e42ae54c764c35"
   instance_type = "t3.micro"
   tags = {
     Name  = "Bastion Server"
-    Owner = "Denis Astahov"
+    Owner = "Tim Keating"
   }
 }

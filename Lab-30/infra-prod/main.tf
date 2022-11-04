@@ -1,12 +1,5 @@
-#-------------------------------------------------------------------------------
-#  Terraform - From Zero to Certified Professional
-#
-# Manipulation with Remote State, Refactoring Terraform Code
-#
-# Made by Denis Astahov
-#-------------------------------------------------------------------------------
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-1"
 }
 
 data "aws_availability_zones" "available" {}

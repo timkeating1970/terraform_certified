@@ -1,45 +1,73 @@
-2020/12/28 14:03:04 [INFO] Terraform version: 0.15.3
-2020/12/28 14:03:04 [INFO] Go runtime version: go1.16.2
-2020/12/28 14:03:04 [INFO] CLI args: []string{"/usr/bin/terraform", "init"}
-2020/12/28 14:03:04 [INFO] CLI command args: []string{"init"}
-2020/12/28 14:03:04 [WARN] Log levels other than TRACE are currently unreliable, and are supported only for backward compatibility.
-  Use TF_LOG=TRACE to see Terraform's internal logs.
-  ----
-2020/12/28 14:03:04 [INFO] Failed to read plugin lock file .terraform/plugins/linux_amd64/lock.json: open .terraform/plugins/linux_amd64/lock.json: no such file or directory
-2020/12/28 14:03:06 [WARN] Log levels other than TRACE are currently unreliable, and are supported only for backward compatibility.
-  Use TF_LOG=TRACE to see Terraform's internal logs.
-  ----
-2020/12/28 14:03:07 [WARN] Log levels other than TRACE are currently unreliable, and are supported only for backward compatibility.
-  Use TF_LOG=TRACE to see Terraform's internal logs.
-  ----
-2020/12/28 14:03:25 [INFO] Terraform version: 0.15.3
-2020/12/28 14:03:25 [INFO] Go runtime version: go1.16.2
-2020/12/28 14:03:25 [INFO] CLI args: []string{"/usr/bin/terraform", "apply"}
-2020/12/28 14:03:25 [INFO] CLI command args: []string{"apply"}
-2020/12/28 14:03:25 [WARN] Log levels other than TRACE are currently unreliable, and are supported only for backward compatibility.
-  Use TF_LOG=TRACE to see Terraform's internal logs.
-  ----
-2020/12/28 14:03:26 [INFO] Failed to read plugin lock file .terraform/plugins/linux_amd64/lock.json: open .terraform/plugins/linux_amd64/lock.json: no such file or directory
-2020/12/28 14:03:26 [INFO] backend/local: starting Apply operation
-2020-12-28T14:03:26.152-0800 [INFO]  plugin: configuring client automatic mTLS
-2020-12-28T14:03:26.243-0800 [INFO]  plugin.terraform-provider-aws_v3.22.0_x5: configuring server automatic mTLS: timestamp=2020-12-28T14:03:26.243-0800
-2020-12-28T14:03:26.457-0800 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
-2020/12/28 14:03:26 [INFO] terraform: building graph: GraphTypeValidate
-2020-12-28T14:03:26.462-0800 [INFO]  plugin: configuring client automatic mTLS
-2020-12-28T14:03:26.554-0800 [INFO]  plugin.terraform-provider-aws_v3.22.0_x5: configuring server automatic mTLS: timestamp=2020-12-28T14:03:26.553-0800
-2020-12-28T14:03:26.997-0800 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
-2020/12/28 14:03:27 [INFO] backend/local: apply calling Plan
-2020/12/28 14:03:27 [INFO] terraform: building graph: GraphTypePlan
-2020-12-28T14:03:27.005-0800 [INFO]  plugin: configuring client automatic mTLS
-2020-12-28T14:03:27.109-0800 [INFO]  plugin.terraform-provider-aws_v3.22.0_x5: configuring server automatic mTLS: timestamp=2020-12-28T14:03:27.108-0800
-2020/12/28 14:03:34 [WARN] Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_instance.web, but we are tolerating it because it is using the legacy plugin SDK.
+2022-08-01T16:27:48.391-0500 [INFO]  Terraform version: 1.2.5
+2022-08-01T16:27:48.391-0500 [INFO]  Go runtime version: go1.18.1
+2022-08-01T16:27:48.391-0500 [INFO]  CLI args: []string{"terraform", "init"}
+2022-08-01T16:27:48.392-0500 [INFO]  CLI command args: []string{"init"}
+2022-08-01T16:28:25.021-0500 [INFO]  Terraform version: 1.2.5
+2022-08-01T16:28:25.022-0500 [INFO]  Go runtime version: go1.18.1
+2022-08-01T16:28:25.022-0500 [INFO]  CLI args: []string{"terraform", "apply"}
+2022-08-01T16:28:25.022-0500 [INFO]  CLI command args: []string{"apply"}
+2022-08-01T16:28:25.183-0500 [INFO]  backend/local: starting Apply operation
+2022-08-01T16:28:25.184-0500 [INFO]  provider: configuring client automatic mTLS
+2022-08-01T16:28:25.283-0500 [INFO]  provider.terraform-provider-aws_v4.24.0_x5: configuring server automatic mTLS: timestamp=2022-08-01T16:28:25.283-0500
+2022-08-01T16:28:25.375-0500 [INFO]  provider: configuring client automatic mTLS
+2022-08-01T16:28:25.476-0500 [INFO]  provider.terraform-provider-aws_v4.24.0_x5: configuring server automatic mTLS: timestamp=2022-08-01T16:28:25.476-0500
+2022-08-01T16:28:25.613-0500 [INFO]  backend/local: apply calling Plan
+2022-08-01T16:28:25.614-0500 [INFO]  provider: configuring client automatic mTLS
+2022-08-01T16:28:25.714-0500 [INFO]  provider.terraform-provider-aws_v4.24.0_x5: configuring server automatic mTLS: timestamp=2022-08-01T16:28:25.713-0500
+2022-08-01T16:28:25.843-0500 [INFO]  provider.terraform-provider-aws_v4.24.0_x5: [INFO] Retrieved credentials from "EnvConfigCredentials"
+2022-08-01T16:28:27.447-0500 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_instance.web, but we are tolerating it because it is using the legacy plugin SDK.
     The following problems may be the cause of any confusing errors from downstream operations:
-      - .get_password_data: planned value cty.False does not match config value cty.NullVal(cty.Bool)
-      - .source_dest_check: planned value cty.True does not match config value cty.NullVal(cty.Bool)
-      - .metadata_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
-      - .network_interface: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
-      - .root_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
-      - .ebs_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
-      - .enclave_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
-      - .ephemeral_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
-2020-12-28T14:03:34.946-0800 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+      - .hibernation: planned value cty.False for a non-computed attribute
+      - .tags: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .source_dest_check: planned value cty.True for a non-computed attribute
+      - .get_password_data: planned value cty.False for a non-computed attribute
+      - .iam_instance_profile: planned value cty.StringVal("") for a non-computed attribute
+      - .user_data_replace_on_change: planned value cty.False for a non-computed attribute
+      - .private_dns_name_options: block count in plan (1) disagrees with count in config (0)
+      - .root_block_device: block count in plan (1) disagrees with count in config (0)
+      - .credit_specification: block count in plan (1) disagrees with count in config (0)
+      - .enclave_options: block count in plan (1) disagrees with count in config (0)
+      - .capacity_reservation_specification: block count in plan (1) disagrees with count in config (0)
+      - .maintenance_options: block count in plan (1) disagrees with count in config (0)
+      - .metadata_options: block count in plan (1) disagrees with count in config (0)
+2022-08-01T16:28:27.456-0500 [INFO]  backend/local: apply calling Apply
+2022-08-01T16:28:49.582-0500 [INFO]  Terraform version: 1.2.5
+2022-08-01T16:28:49.582-0500 [INFO]  Go runtime version: go1.18.1
+2022-08-01T16:28:49.582-0500 [INFO]  CLI args: []string{"terraform", "destroy"}
+2022-08-01T16:28:49.583-0500 [INFO]  CLI command args: []string{"destroy"}
+2022-08-01T16:28:49.746-0500 [INFO]  backend/local: starting Apply operation
+2022-08-01T16:28:49.747-0500 [INFO]  provider: configuring client automatic mTLS
+2022-08-01T16:28:49.851-0500 [INFO]  provider.terraform-provider-aws_v4.24.0_x5: configuring server automatic mTLS: timestamp=2022-08-01T16:28:49.851-0500
+2022-08-01T16:28:49.949-0500 [INFO]  provider: configuring client automatic mTLS
+2022-08-01T16:28:50.055-0500 [INFO]  provider.terraform-provider-aws_v4.24.0_x5: configuring server automatic mTLS: timestamp=2022-08-01T16:28:50.055-0500
+2022-08-01T16:28:50.192-0500 [INFO]  backend/local: apply calling Plan
+2022-08-01T16:28:50.193-0500 [INFO]  provider: configuring client automatic mTLS
+2022-08-01T16:28:50.293-0500 [INFO]  provider.terraform-provider-aws_v4.24.0_x5: configuring server automatic mTLS: timestamp=2022-08-01T16:28:50.292-0500
+2022-08-01T16:28:50.429-0500 [INFO]  provider.terraform-provider-aws_v4.24.0_x5: [INFO] Retrieved credentials from "EnvConfigCredentials"
+2022-08-01T16:28:51.885-0500 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_instance.web, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .hibernation: planned value cty.False for a non-computed attribute
+      - .tags: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .user_data_replace_on_change: planned value cty.False for a non-computed attribute
+      - .iam_instance_profile: planned value cty.StringVal("") for a non-computed attribute
+      - .source_dest_check: planned value cty.True for a non-computed attribute
+      - .get_password_data: planned value cty.False for a non-computed attribute
+      - .capacity_reservation_specification: block count in plan (1) disagrees with count in config (0)
+      - .enclave_options: block count in plan (1) disagrees with count in config (0)
+      - .private_dns_name_options: block count in plan (1) disagrees with count in config (0)
+      - .root_block_device: block count in plan (1) disagrees with count in config (0)
+      - .credit_specification: block count in plan (1) disagrees with count in config (0)
+      - .maintenance_options: block count in plan (1) disagrees with count in config (0)
+      - .metadata_options: block count in plan (1) disagrees with count in config (0)
+2022-08-01T16:28:51.890-0500 [INFO]  provider: configuring client automatic mTLS
+2022-08-01T16:28:52.003-0500 [INFO]  provider.terraform-provider-aws_v4.24.0_x5: configuring server automatic mTLS: timestamp=2022-08-01T16:28:52.003-0500
+2022-08-01T16:28:54.025-0500 [INFO]  backend/local: apply calling Apply
+2022-08-01T16:28:54.028-0500 [INFO]  provider: configuring client automatic mTLS
+2022-08-01T16:28:54.152-0500 [INFO]  provider.terraform-provider-aws_v4.24.0_x5: configuring server automatic mTLS: timestamp=2022-08-01T16:28:54.151-0500
+2022-08-01T16:28:54.286-0500 [INFO]  provider.terraform-provider-aws_v4.24.0_x5: [INFO] Retrieved credentials from "EnvConfigCredentials"
+2022-08-01T16:28:54.795-0500 [INFO]  Starting apply for aws_instance.web
+2022-08-01T16:28:55.090-0500 [INFO]  provider.terraform-provider-aws_v4.24.0_x5: [INFO] Terminating EC2 Instance: i-0015f4635dd2efd69
+2022-08-02T16:21:08.215-0500 [INFO]  Terraform version: 1.2.5
+2022-08-02T16:21:08.215-0500 [INFO]  Go runtime version: go1.18.1
+2022-08-02T16:21:08.215-0500 [INFO]  CLI args: []string{"terraform", "--version"}
+2022-08-02T16:21:08.217-0500 [INFO]  CLI command args: []string{"version", "--version"}

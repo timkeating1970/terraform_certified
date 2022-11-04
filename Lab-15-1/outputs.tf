@@ -7,5 +7,5 @@ output "server_id" {
 }
 
 output "securitygroup_id" {
-  value     = aws_security_group.web.id
+  value = aws_security_group.web.id
 }
