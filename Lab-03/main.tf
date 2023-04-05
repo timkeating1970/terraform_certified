@@ -10,7 +10,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_instance" "web" {
+resource "aws_instance" "web-1" {
   ami                    = "ami-05fa00d4c63e32376" // Amazon Linux2
   instance_type          = "t3.micro"
   vpc_security_group_ids = [aws_security_group.web.id]
