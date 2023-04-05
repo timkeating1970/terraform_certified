@@ -19,9 +19,9 @@ resource "aws_instance" "my_server" {
   for_each      = toset(["Dev", "Staging", "Prod"])
   ami           = "ami-098e42ae54c764c35"
   instance_type = "t3.micro"
-  tags          = {
-    Name        = "Server-${each.value}"
-    Owner       = "Tim Keating"
+  tags = {
+    Name  = "Server-${each.value}"
+    Owner = "Tim Keating"
   }
 }
 
