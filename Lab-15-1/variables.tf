@@ -5,7 +5,7 @@ variable "aws_region" {
 }
 
 variable "port_list" {
-  description = "List of Poret to open for our WebServer"
+  description = "List of Port to open for our WebServer"
   type        = list(any)
 }
 
